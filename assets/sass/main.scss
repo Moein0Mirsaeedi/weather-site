@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  background-color: #212a3e;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto;
+
+  .sections.search-bar {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+      background-color: #9ba4b5;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        background-color: #212a3e;
+        border: #9ba4b5 3px solid;
+        border-radius: 100px;
+        color: #9ba4b5;
+        padding: 5px;
+        text-align: center;
+        font-size: 13px;
+        transition: all 500ms;
+      }
+
+      input:focus {
+        outline: none;
+        transform: scale(1.03);
+      }
+
+      button {
+        background-color: #212a3e;
+        border: #9ba4b5 3px solid;
+        border-radius: 100px;
+        padding: 5px;
+        width: 30px;
+        cursor: pointer;
+        height: 30px;
+        transition: all 500ms;
+
+        ion-icon {
+          position: relative;
+          top: -1px;
+          left: -1px;
+          font-size: 15px;
+          color: #9ba4b5;
+        }
+      }
+
+      button:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .sections.info-section {
+    grid-row: 2 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

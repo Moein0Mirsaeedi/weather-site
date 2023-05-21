@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 article {
@@ -70,5 +73,29 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: #9ba4b5;
+
+    .weather-location {
+      font-size: 1.8em;
+    }
+
+    .weather-date {
+      font-size: 0.8em;
+    }
+
+    .weather-temp {
+      margin: 20px 0;
+      font-size: 9em;
+      filter: drop-shadow(black 4px 4px 0px);
+    }
+
+    .weather-weather {
+      font-size: 1.8em;
+    }
+
+    .weather-tempmm {
+      font-size: 0.8em;
+    }
   }
 }

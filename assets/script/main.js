@@ -9,7 +9,6 @@ button.addEventListener("click", () => {
 });
 
 input.addEventListener("keyup", (ev) => {
-  console.log(ev);
   if (ev.keyCode == 13) {
     getData();
   }
@@ -57,7 +56,7 @@ function setWeatherData(data) {
   }
 
   let monthName;
-  switch (dateNow.getDate()) {
+  switch (dateNow.getMonth()) {
     case 0:
       monthName = "January";
       break;
@@ -95,7 +94,8 @@ function setWeatherData(data) {
       monthName = "December";
       break;
   }
-  dateNow.getSeconds;
+  console.log(monthName);
+
   setElementWeather(dateNow, weekDay, monthName, data);
 }
 
